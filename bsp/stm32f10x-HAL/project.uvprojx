@@ -471,11 +471,6 @@
               <FileType>1</FileType>
               <FilePath>applications\main.c</FilePath>
             </File>
-            <File>
-              <FileName>at_client_sample.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\packages\at_device-v1.4.0\at_client_sample.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
