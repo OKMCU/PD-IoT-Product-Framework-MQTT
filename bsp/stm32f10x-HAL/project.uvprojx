@@ -521,11 +521,6 @@
               <FileType>1</FileType>
               <FilePath>packages/pahomqtt-v1.1.0/MQTTClient-RT/paho_mqtt_pipe.c</FilePath>
             </File>
-            <File>
-              <FileName>mqtt_sample.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>packages/pahomqtt-v1.1.0/samples/mqtt_sample.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -545,6 +540,11 @@
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>applications/main.c</FilePath>
+            </File>
+            <File>
+              <FileName>mqtt_sample.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>applications/mqtt_sample.c</FilePath>
             </File>
           </Files>
         </Group>

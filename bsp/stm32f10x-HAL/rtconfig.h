@@ -192,7 +192,7 @@
 #define AT_USING_SOCKET
 #define AT_USING_CLI
 /* AT_PRINT_RAW_CMD is not set */
-#define AT_CMD_MAX_LEN 128
+#define AT_CMD_MAX_LEN 1024
 #define AT_SW_VERSION_NUM 0x10200
 
 /* VBUS(Virtual Software BUS) */
@@ -212,7 +212,7 @@
 #define PKG_USING_PAHOMQTT
 #define PAHOMQTT_PIPE_MODE
 /* PAHOMQTT_UDP_MODE is not set */
-#define PKG_USING_PAHOMQTT_EXAMPLE
+/* PKG_USING_PAHOMQTT_EXAMPLE is not set */
 /* PKG_USING_PAHOMQTT_TEST is not set */
 /* MQTT_USING_TLS is not set */
 #define RT_PKG_MQTT_THREAD_STACK_SIZE 4096
@@ -247,7 +247,7 @@
 /* PKG_USING_NOPOLL is not set */
 /* PKG_USING_NETUTILS is not set */
 #define PKG_USING_AT_DEVICE
-#define PKG_AT_INIT_BY_THREAD
+/* PKG_AT_INIT_BY_THREAD is not set */
 /* AT_DEVICE_M26 is not set */
 /* AT_DEVICE_EC20 is not set */
 #define AT_DEVICE_ESP8266
