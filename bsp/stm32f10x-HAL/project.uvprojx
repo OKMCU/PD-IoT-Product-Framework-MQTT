@@ -966,11 +966,6 @@
               <FileType>1</FileType>
               <FilePath>packages/mbedtls-v2.7.10/ports/src/tls_net.c</FilePath>
             </File>
-            <File>
-              <FileName>tls_app_test.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>packages/mbedtls-v2.7.10/samples/tls_app_test.c</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
