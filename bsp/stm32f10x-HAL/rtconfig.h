@@ -129,7 +129,12 @@
 /* RT_USING_MTD_NAND is not set */
 /* RT_USING_MTD is not set */
 /* RT_USING_PM is not set */
-/* RT_USING_RTC is not set */
+#define RT_USING_RTC
+/* RT_USING_ALARM is not set */
+/* RT_USING_SOFT_RTC is not set */
+#define RTC_SYNC_USING_NTP
+#define RTC_NTP_FIRST_SYNC_DELAY 30
+#define RTC_NTP_SYNC_PERIOD 3600
 /* RT_USING_SDIO is not set */
 /* RT_USING_SPI is not set */
 /* RT_USING_WDT is not set */
@@ -164,6 +169,7 @@
 /* protocol stack implement */
 
 #define SAL_USING_AT
+#define SAL_USING_TLS
 #define SAL_USING_POSIX
 
 /* Network interface device */
@@ -214,8 +220,8 @@
 /* PAHOMQTT_UDP_MODE is not set */
 /* PKG_USING_PAHOMQTT_EXAMPLE is not set */
 /* PKG_USING_PAHOMQTT_TEST is not set */
-/* MQTT_USING_TLS is not set */
-#define RT_PKG_MQTT_THREAD_STACK_SIZE 4096
+#define MQTT_USING_TLS
+#define RT_PKG_MQTT_THREAD_STACK_SIZE 6144
 #define PKG_PAHOMQTT_SUBSCRIBE_HANDLERS 1
 #define MQTT_DEBUG
 #define PKG_USING_PAHOMQTT_V110
@@ -245,9 +251,19 @@
 /* PKG_USING_RW007 is not set */
 /* PKG_USING_COAP is not set */
 /* PKG_USING_NOPOLL is not set */
-/* PKG_USING_NETUTILS is not set */
+#define PKG_USING_NETUTILS
+/* PKG_NETUTILS_IPERF is not set */
+#define PKG_NETUTILS_NTP
+#define NETUTILS_NTP_TIMEZONE 8
+#define NETUTILS_NTP_HOSTNAME "cn.ntp.org.cn"
+#define NETUTILS_NTP_HOSTNAME2 "ntp.rt-thread.org"
+#define NETUTILS_NTP_HOSTNAME3 "edu.ntp.org.cn"
+/* PKG_NETUTILS_TELNET is not set */
+#define PKG_USING_NETUTILS_V110
+/* PKG_USING_NETUTILS_V100 is not set */
+/* PKG_USING_NETUTILS_LATEST_VERSION is not set */
 #define PKG_USING_AT_DEVICE
-/* PKG_AT_INIT_BY_THREAD is not set */
+#define PKG_AT_INIT_BY_THREAD
 /* AT_DEVICE_M26 is not set */
 /* AT_DEVICE_EC20 is not set */
 #define AT_DEVICE_ESP8266
@@ -288,7 +304,34 @@
 
 /* security packages */
 
-/* PKG_USING_MBEDTLS is not set */
+#define PKG_USING_MBEDTLS
+
+/* Select Root Certificate */
+
+/* PKG_USING_MBEDTLS_USE_ALL_CERTS is not set */
+#define PKG_USING_MBEDTLS_USER_CERTS
+/* PKG_USING_MBEDTLS_THAWTE_ROOT_CA is not set */
+/* PKG_USING_MBEDTLS_VERSIGN_PBULIC_ROOT_CA is not set */
+/* PKG_USING_MBEDTLS_VERSIGN_UNIVERSAL_ROOT_CA is not set */
+/* PKG_USING_MBEDTLS_GEOTRUST_ROOT_CA is not set */
+#define PKG_USING_MBEDTLS_DIGICERT_ROOT_CA
+/* PKG_USING_MBEDTLS_GODADDY_ROOT_CA is not set */
+/* PKG_USING_MBEDTLS_COMODOR_ROOT_CA is not set */
+/* PKG_USING_MBEDTLS_DST_ROOT_CA is not set */
+/* PKG_USING_MBEDTLS_CLOBALSIGN_ROOT_CA is not set */
+/* PKG_USING_MBEDTLS_ENTRUST_ROOT_CA is not set */
+#define PKG_USING_MBEDTLS_AMAZON_ROOT_CA
+#define MBEDTLS_AES_ROM_TABLES
+#define MBEDTLS_ECP_WINDOW_SIZE 2
+#define MBEDTLS_SSL_MAX_CONTENT_LEN 3584
+#define PKG_USING_MBEDTLS_EXAMPLE
+#define MBEDTLS_MPI_MAX_SIZE 1024
+#define MBEDTLS_CTR_DRBG_KEYSIZE 32
+/* PKG_USING_MBEDTLS_DEBUG is not set */
+#define PKG_USING_MBEDTLS_V2710
+/* PKG_USING_MBEDTLS_V261 is not set */
+/* PKG_USING_MBEDTLS_V260 is not set */
+/* PKG_USING_MBEDTLS_LATEST_VERSION is not set */
 /* PKG_USING_libsodium is not set */
 /* PKG_USING_TINYCRYPT is not set */
 

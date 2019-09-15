@@ -25,11 +25,11 @@
  * tcp://[fe80::20c:29ff:fe9a:a07e]:1883
  * ssl://[fe80::20c:29ff:fe9a:a07e]:1884
  */
-#define MQTT_URI                "tcp://192.168.1.104:1883"
-#define MQTT_USERNAME           "QQ3185610"
-#define MQTT_PASSWORD           "qq3185610"
-#define MQTT_SUBTOPIC           "/qq3185610"
-#define MQTT_PUBTOPIC           "/qq3185610"
+#define MQTT_URI                "ssl://test.mosquitto.org:8883"
+#define MQTT_USERNAME           NULL
+#define MQTT_PASSWORD           NULL
+#define MQTT_SUBTOPIC           "/QQ3185610/rx"
+#define MQTT_PUBTOPIC           "/QQ3185610/tx"
 #define MQTT_WILLMSG            "Goodbye!"
 
 /* define MQTT client context */
